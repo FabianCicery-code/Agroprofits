@@ -1,0 +1,244 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --verde:#5D8C3B;
+    --verde-oscuro:#355C2C;
+    --cafe:#6A4A2F;
+    --crema:#5f4812;
+    --blanco:rgba(248, 248, 247, 0.9);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.flecha-regreso {
+position: absolute; 
+top: 20px;
+left: 20px;
+text-decoration: none;
+font-size: 9px;
+font-weight: bold;
+color: #6b4226; 
+background-color: #ffffff;
+padding: 8px 15px;
+border-radius: 20px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.flecha-regreso:hover {
+background-color: #6b4226;
+color: white;
+}
+body{
+    
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:
+    linear-gradient(rgba(18,35,18,.45), rgba(45,30,18,.35)),
+    url("../img/logo.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.login-container{
+    width:100%;
+    max-width:420px;
+    padding:38px 32px;
+
+    background:rgba(91, 65, 5, 0.285);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(94, 73, 8, 0.697);
+    border-radius:28px;
+
+    box-shadow:
+        0 20px 50px rgba(199, 127, 12, 0.35),
+        inset 0 1px 1px rgba(209, 176, 9, 0.2);
+    text-align:center;
+    animation:entrada .8s ease;
+}
+
+@keyframes entrada{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.logo{
+    width:130px;
+    height:130px;
+    display:block;
+    margin:0 auto 18px;
+    object-fit:contain;
+    background:rgba(255,255,255,.18);
+    border-radius:24px;
+    padding:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.4s ease;
+}
+
+.logo:hover{
+    transform:scale(1.06) rotate(-2deg);
+    box-shadow:0 18px 35px rgba(73, 135, 28, 0.529);
+}
+
+.login-container h2{
+    color:var(--crema);
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:.5px;
+    margin-bottom:6px;
+}
+
+.subtitulo{
+    color:#ECE6D8;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    text-align:left;
+    color:#F4F2EB;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+input{
+    width:100%;
+    padding:15px 16px;
+    margin-bottom:18px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:var(--blanco);
+    color:#3A2C1F;
+    font-size:15px;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#8A8A8A;
+}
+
+input:focus{
+    background:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 0 0 4px rgba(93,140,59,.25);
+}
+
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,var(--verde),var(--cafe));
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 30px rgba(53,92,44,.35);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+p{
+    margin-top:18px;
+    color:#F5F0E6;
+    font-size:14px;
+}
+
+p a{
+    color:#457b0b;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+p a:hover{
+    color:#fff;
+}
+
+
+.error{
+    color:#FFD7D7;
+    text-align:left;
+    margin:-8px 0 12px;
+    font-size:13px;
+}
+
+@media (max-width:768px){
+
+    .login-container{
+        max-width:90%;
+        padding:32px 26px;
+    }
+
+    .logo{
+        width:110px;
+        height:110px;
+    }
+
+    .login-container h2{
+        font-size:26px;
+    }
+}
+
+@media (max-width:480px){
+
+    body{
+        padding:15px;
+        background-attachment:scroll;
+    }
+
+    .login-container{
+        max-width:100%;
+        padding:26px 20px;
+        border-radius:22px;
+    }
+
+    .logo{
+        width:95px;
+        height:95px;
+        padding:10px;
+    }
+
+    .login-container h2{
+        font-size:22px;
+    }
+
+    .subtitulo{
+        font-size:13px;
+    }
+
+    input,
+    button{
+        padding:13px;
+        font-size:14px;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | AgroProfits</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="registro-container">
+        <section class="registro-info">
+            <img src="img/logoAgro.svg" alt="Logo de AgroProfits">
+            <a href="../index.html" class="flecha-regreso">← Volver</a>
+
+            <div class="info-content">
+                <h1>Únete a AgroProfits</h1>
+                <p>
+                    Gestiona de manera sencilla y segura la información
+                    contable relacionada con la compra y venta de café.
+                </p>
+                <div class="beneficios">
+                    <div class="beneficio">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div>
+                            <h3>Control financiero</h3>
+                            <p>Administra tus operaciones comerciales.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <i class="fa-solid fa-coins"></i>
+                        <div>
+                            <h3>Gestión de ventas</h3>
+                            <p>Controla tus compras y ventas de café.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h3>Información segura</h3>
+                            <p>Protege tus datos y registros contables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 AgroProfits. Todos los derechos reservados.
+            </div>
+
+        </section>
+        <section class="registro-formulario">
+            <div class="form-header">
+                <h2>Crear una cuenta</h2>
+                <p>Completa tus datos para comenzar</p>
+            </div>
+            <form id="registroForm">
+                <div class="form-group">
+                    <label for="nombre">
+                        <i class="fa-solid fa-user"></i>
+                        Nombre completo
+                    </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            Teléfono
+                        </label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="correo">
+                        <i class="fa-solid fa-envelope"></i>
+                        Correo electrónico
+                    </label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo">
+                        <i class="fa-solid fa-users"></i>
+                        Tipo de usuario
+                    </label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="" disabled selected>
+                            Selecciona una opción
+                        </option>
+                        <option value="productor">
+                            Productor de café
+                        </option>
+                        <option value="comprador">
+                            Comerciante 
+                        </option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">
+                            <i class="fa-solid fa-lock"></i>
+                            Contraseña
+                        </label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" minlength="8"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">
+                            <i class="fa-solid fa-lock"></i>
+                            Confirmar contraseña
+                        </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••"
+                            minlength="8" required>
+                    </div>
+                </div>
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">
+                        Acepto los términos y condiciones de AgroProfits.
+                    </label>
+                </div>
+                <button type="submit" class="btn-registrar">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Crear cuenta
+                </button>
+                <div class="login-link">
+                    ¿Ya tienes una cuenta?
+                    <a href="../Inicio de secion/index.html" target="_blank">
+                        Iniciar sesión
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

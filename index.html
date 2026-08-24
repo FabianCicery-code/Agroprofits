@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!--Menu Header-->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Agroprofits</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">Servicios</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="botones">
+                <a href="./Inicio de secion/index.html" class="btn-login">Iniciar Sesion</a>
+                <a href="./Registro Usuario/index.html" class="btn-register">Registrarse</a>
+            </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="container"></div>
+        <div class="hero-content">
+            <p class="hero-small">
+                GESTIONA • PRODUCE • CRECE
+            </p>
+            <h1>
+                Cultivando control,
+                <span>cosechando ganancias</span>
+            </h1>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="container-section">
+            <h2>Nosotros</h2>
+            <p>
+                <span>Agroprofits es una plataforma desarrollada para facilitar la gestión de las actividades relacionadas con la producción cafetera.</span>
+                Su propósito es ayudar a organizar la información de producción, gastos e ingresos, permitiendo tener un mejor control sobre las operaciones y las ganancias
+            </p>
+        </div>
+        <div class="coffe-elements">
+            <div class="coffee-card">
+                <i class="fa-solid fa-seedling"></i>
+                <span>Produccion</span>
+            </div>
+            <div class="coffee-main">
+                ☕️
+            </div>
+            <div class="coffee-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Ganancias</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="container-servicios">
+            <div class="servicios-titulo">
+                <h2>Servicios</h2>
+                <p>
+                    Todo lo que necesitas
+                    <span>en un solo lugar</span>
+                </p>
+                <p class="servicios-descripcion">
+                    Herramientas diseñadas para ayudarte a gestionar
+                    y controlar tu actividad cafetera.
+                </p>
+            </div>
+            <div class="servicios-grid">
+                <!-- Producción -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        🌱
+                    </div>
+                    <h3>Producción</h3>
+                    <p>
+                        Registra y controla los kilos de café
+                        producidos de manera organizada.
+                    </p>
+                    <span class="servicio-arrow">→</span>
+                </div>
+                <!-- Gastos -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        💰
+                    </div>
+                    <h3>Gastos</h3>
+                    <p>
+                        Registra y organiza tus gastos
+                        operativos.
+                    </p>
+                    <span class="servicio-arrow">→</span>
+                </div>
+                <!-- Lotes -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        ☕
+                    </div>
+                    <h3>Lotes</h3>
+                    <p>
+                        Gestiona la información de tus
+                        lotes de café.
+                    </p>
+                    <span class="servicio-arrow">→</span>
+                </div>
+                <!-- Finanzas -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        📊
+                    </div>
+                    <h3>Finanzas</h3>
+                    <p>
+                        Consulta ingresos, gastos, pérdidas
+                        y ganancias.
+                    </p>
+                    <span class="servicio-arrow">→</span>
+                </div>
+                <!-- Reportes -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        📅
+                    </div>
+                    <h3>Reportes</h3>
+                    <p>
+                        Consulta información organizada
+                        de tus operaciones.
+                    </p>
+                    <span class="servicio-arrow">→</span>
+                </div>
+                <!-- Precios -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        📈
+                    </div>
+                    <h3>Precio del café</h3>
+                    <p>
+                        Consulta el precio vigente del café
+                        para tus operaciones.
+                    </p>
+                    <span class="servicio-arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container-contacto">
+                <h2>Contacto</h2>
+                <p>
+                    Estamos aquí para ayudarte. Escríbenos y conoce
+                    más sobre nuestra plataforma
+                </p>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <img src="img/logoAgro.svg" alt="Agroprofits" class="footer-logo">
+                <p>
+                    Gestión inteligente para la producción,
+                    comercialización y rentabilidad del café.
+                </p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p> hsandrade11@gmail.com  yeisonfabianballen@gmail.com</p>
+                <p> +57 313 816 6307
+                    +57 323 213 9064
+                </p>
+                <p> Colombia, Garzon-Huila</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                2026 Agroprofits. Todos los derechos reservados.
+            </p>
+            <div class="footer-social">
+                <a href="https://hsandrade11.github.io/Portafolio/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
